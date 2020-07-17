@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700|family=Gotu:100,200,300,400,500,600,700|family=Montserrat:100,200,300,400,500,600,700|family=Gochi Hand:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/* ----------------------------------------------- Navigation Start --- */
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Gotu", sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 1px solid;
+  /*background-color: rgba(255, 255, 255, .4)!important*/
+}
+
+.navbar-brand{
+    font-family: "Gochi Hand", cursive;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 0px;
+    color: #ffa083;
+}
+
+.fa-globe-americas{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.navbar-nav li{
+  padding-right: 11px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: 12px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ffa083;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    font-weight: 700;
+}
+
+
+
+.packages-img {
+  height: 100vh;
+  background: url(../images/packages.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-container{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container{
+    width: auto;
+}
+
+.container:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.off{
+    width: 30px;
+    height: 25px;
+}
+
+.off a{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Varela Round",sans-serif;
+    margin-left: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.heading-services {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    font-family: "Varela Round", sans-serif;
+}
+
+.text-center a{
+    text-decoration: none;
+}
+
+.description{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.small-circle-middle{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    background-color: #ffa083;
+    border-width: 4px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    z-index: 10;
+    border-color: #ffa083;
+}
+
+.middle{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-style: solid;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#map{
+    height: 100%;
+    border-radius: 50%;
+    background-size: 300px;
+}
