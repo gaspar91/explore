@@ -1,4 +1,63 @@
-function initMap(){ 
+//oslo map
+
+function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: {
+                    lat: 59.911491,
+                    lng: 10.757933
+                }
+            });
+        }
+
+var button = document.getElementById("restaurants");
+
+button onclick = function(){
+
+};
+
+/*function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: {
+                    lat: 59.911491,
+                    lng: 10.757933
+                }
+            });
+
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            //restaurants
+            
+            var locations = [{
+                lat: 59.910508,
+                lng: 10.76032
+            }, {
+                lat: 59.91676,
+                lng: 10.73776
+            }, {
+                lat: 59.9178541,
+                lng: 10.7339675
+            }];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }*/
+
+
+
+
+
+
+/*function initMap(){ 
 
       // Map options 
 
@@ -126,4 +185,4 @@ function initMap(){
 
       } 
 
-    } 
+    } */
