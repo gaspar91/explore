@@ -1,56 +1,93 @@
 //oslo map
 
 function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
-                center: {
-                    lat: 59.911491,
-                    lng: 10.757933
-                }
-            });
-};
-
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: {
+      lat: 59.911491,
+      lng: 10.757933,
+    },
+  });
+}
 
 function myfunction() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
-                center: {
-                    lat: 59.911491,
-                    lng: 10.757933
-                }
-            });
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: {
+      lat: 59.911491,
+      lng: 10.757933,
+    },
+  });
 
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
-            //restaurants
-            
-            var locations = [{
-                lat: 59.910508,
-                lng: 10.76032
-            }, {
-                lat: 59.91676,
-                lng: 10.73776
-            }, {
-                lat: 59.9178541,
-                lng: 10.7339675
-            }];
+  //restaurants
 
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
+  var locations = [
+    {
+      lat: 59.910508,
+      lng: 10.76032,
+    },
+    {
+      lat: 59.91676,
+      lng: 10.73776,
+    },
+    {
+      lat: 59.9178541,
+      lng: 10.7339675,
+    },
+  ];
 
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
-        }
+  var markers = locations.map(function (location, i) {
+    return new google.maps.Marker({
+      position: location,
+      label: labels[i % labels.length],
+    });
+  });
 
+  var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
+}
 
+let restaurants = [
+  "A. Den Glade Gris",
+  "B. Rorbua Aker Brygge",
+  "C. Maaemo",
+  "D. Sofies mat og vinhus",
+  "E. Restaurant Fjord",
+  "F. Rest",
+  "G. Arakataka",
+  "H. Elias mat & sånt",
+  "I. Restaurant Kontrast",
+  "J. Hos Thea",
+  "K. Statholdergaarden",
+];
 
+let coffeeshops = [
+  "A. Espresso House",
+  "B. Starbucks",
+  "C. Tim Wendelboe",
+  "D. Fuglen",
+  "E. Stockfleths",
+  "F. Hendrix Ibsen",
+  "G. Supreme Roastworks AS",
+  "H. My ugly baby",
+  "I. Java espresso",
+  "J. Stockfleths",
+  "K. Fuglen Coffee Roasters",
+];
 
+function myRestaurants() {
+  var x = document.getElementById("demo");
+  x.innerHTML = restaurants.join("<br>");
+}
 
+function myCoffee() {
+  var x = document.getElementById("demo");
+  x.innerHTML = coffeeshops.join("<br>");
+}
 
 /*function initMap(){ 
 
