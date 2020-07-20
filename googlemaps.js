@@ -8,15 +8,10 @@ function initMap() {
                     lng: 10.757933
                 }
             });
-        }
-
-var button = document.getElementById("restaurants");
-
-button onclick = function(){
-
 };
 
-/*function initMap() {
+
+function myfunction() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 10,
                 center: {
@@ -50,7 +45,7 @@ button onclick = function(){
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
-        }*/
+        }
 
 
 
