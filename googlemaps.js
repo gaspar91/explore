@@ -10,7 +10,7 @@ function initMap() {
   });
 }
 
-function myfunction() {
+function myRestaurantLocation() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
     center: {
@@ -21,21 +21,117 @@ function myfunction() {
 
   var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
 
-  //restaurants
+  //restaurant locations
 
   var locations = [
-    {
-      lat: 59.910508,
-      lng: 10.76032,
-    },
-    {
-      lat: 59.91676,
-      lng: 10.73776,
-    },
-    {
+    {//Den Glade Gris
       lat: 59.9178541,
       lng: 10.7339675,
     },
+    {//Rorbua Aker Brygge
+      lat: 59.9088001,
+      lng: 10.7247294,
+    },
+    {//Maaemo
+      lat: 59.9075576,
+      lng: 10.758191,
+    },
+    {// Sofies mat og vinhus
+      lat: 59.9226899,
+      lng: 10.7356068,
+    },
+    {// Restaurant Fjord
+      lat: 59.9167545,
+      lng: 10.7377502,
+    },
+    {// Rest
+      lat: 59.9091625,
+      lng: 10.7422209,
+    },
+    {// Arakataka
+      lat: 59.9163672,
+      lng: 10.7506229,
+    },
+    {// Elias mat & sånt
+      lat: 59.9163238,
+      lng: 10.7387246,
+    },
+    {// Restaurant Kontrast
+      lat: 59.9229418,
+      lng: 10.7511292,
+    },
+    {// Hos Thea
+      lat: 59.912725,
+      lng: 10.7093833,
+    }
+  ];
+
+  var markers = locations.map(function (location, i) {
+    return new google.maps.Marker({
+      position: location,
+      label: labels[i % labels.length],
+    });
+  });
+
+  var markerCluster = new MarkerClusterer(map, markers, {
+    imagePath:
+      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  });
+}
+function myCoffeeLocation() {
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: {
+      lat: 59.911491,
+      lng: 10.757933,
+    },
+  });
+
+  var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+  //coffee shops locations
+
+  var locations = [
+    {//Espresso House
+      lat: 59.9087961,
+      lng: 10.7578227,
+    },
+    {//Starbucks
+      lat: 59.9111736,
+      lng: 10.7530403,
+    },
+    {//Tim Wendelboe
+      lat: 59.9233709,
+      lng: 10.7556998,
+    },
+    {// Fuglen
+      lat: 59.9172303,
+      lng: 10.7397703,
+    },
+    {// Stockfleths
+      lat: 59.9121364,
+      lng: 10.7486613,
+    },
+    {// Hendrix Ibsen
+      lat: 59.9220352,
+      lng: 10.7512782,
+    },
+    {// Supreme Roastworks AS
+      lat: 59.9280583,
+      lng: 10.7592917,
+    },
+    {// My ugly baby
+      lat: 59.9149799,
+      lng: 10.7504415,
+    },
+    {// Java espresso
+      lat: 59.9243908,
+      lng: 10.7396507,
+    },
+    {// Kaffebrenneriet
+      lat: 59.9187663,
+      lng: 10.7574981,
+    }
   ];
 
   var markers = locations.map(function (location, i) {
@@ -62,7 +158,6 @@ let restaurants = [
   "H. Elias mat & sånt",
   "I. Restaurant Kontrast",
   "J. Hos Thea",
-  "K. Statholdergaarden",
 ];
 
 let coffeeshops = [
@@ -75,8 +170,7 @@ let coffeeshops = [
   "G. Supreme Roastworks AS",
   "H. My ugly baby",
   "I. Java espresso",
-  "J. Stockfleths",
-  "K. Fuglen Coffee Roasters",
+  "J. Kaffebrenneriet",
 ];
 
 function myRestaurants() {

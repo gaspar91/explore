@@ -63,8 +63,8 @@
                 <div class="container">
                     <div id="map"></div>
                     <div class="right">
-                        <button onclick="myfunction(); myRestaurants()">restaurants</button>
-                        <button onclick="myfunction(); myCoffee()">coffeeshops</button>
+                        <button onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
+                        <button onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
                         <div id="demo"></div>
                     </div>
                     <div class="left">
@@ -72,6 +72,7 @@
             </div>
         <!-- End Circle Section -->
 	</div>
+    </div>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
     <script src="googlemaps.js"></script>
