@@ -131,8 +131,8 @@ body {
 }
 
 #map{
-    width: 800px;
-    height: 300px;
+    width: 1000px;
+    height: 500px;
     float: left;
 }
 
@@ -149,3 +149,54 @@ body {
 div #demo{
     color: black;
 }
+
+.map-container{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.map-button{
+    width: 150px;
+    text-align: center;
+    float: left;
+    border-style: solid;
+    background-color: #ffa083;
+    position: relative;
+    margin-left: 10px;
+    top: 13%;
+    left: 9%;
+    z-index: 10;
+    border-color: #ffa083;
+    color: white;
+    font-weight: bold;
+    border-radius: 23px;
+    padding: .5rem 1rem;
+    font-size: 15px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.map-button:hover {
+  background-color:white;
+  color: #ffa083;
+  border: 1px solid white;
+}
+
+.map-button-container{
+    height: 45px;
+    padding: 5px;
+    position: absolute;
+    top: 11%;
+    width: 100%;
+}
+
+

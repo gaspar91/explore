@@ -58,17 +58,24 @@
         </div>
 		<!-- End Landing Page Section -->
 
-        <!-- Start Circle Section -->
-            <div class="circle-container container-middle">
+        <!-- Start Map Nav Section -->
+         <div class="map-button-container">
+            <button class="map-button" onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
+            <button class="map-button" onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
+            <button class="map-button" onclick="myAccomodationLocation(); myAccomodation()">accomodation</button>
+            <button class="map-button" onclick="myActivitiesLocation(); myActivities()">activities</button>
+            <button class="map-button" onclick="myParksLocation(); myParks()">parks</button>
+            <button class="map-button" onclick="myBarsLocation(); myBars()">bars</button>
+         </div>
+        <!-- End Map Nav Section -->
+
+        <!-- Start Map Section -->
+            <div class="map-container container-middle">
                 <div class="container">
                     <div id="map"></div>
                     <div class="right">
-                        <button onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
-                        <button onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
-                        <button onclick="myAccomodationLocation(); myAccomodation()">accomodation</button>
-                        <button onclick="myActivitiesLocation(); myActivities()">activities</button>
-                        <button onclick="myParksLocation(); myParks()">parks</button>
-                        <button onclick="myBarsLocation(); myBars()">bars</button>
+                       
+                        
                         <div id="demo"></div>
                     </div>
                     <div class="left">
