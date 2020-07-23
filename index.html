@@ -60,7 +60,7 @@
 
         <!-- Start Map Nav Section -->
          <div class="map-button-container">
-            <button class="map-button" onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
+            <button class="map-button active" onclick="myRestaurantLocation(); myRestaurants()">restaurants</button>
             <button class="map-button" onclick="myCoffeeLocation(); myCoffee()">coffeeshops</button>
             <button class="map-button" onclick="myAccomodationLocation(); myAccomodation()">accomodation</button>
             <button class="map-button" onclick="myActivitiesLocation(); myActivities()">activities</button>
@@ -70,20 +70,14 @@
         <!-- End Map Nav Section -->
 
         <!-- Start Map Section -->
-            <div class="map-container container-middle">
+            <div class="map-container">
                 <div class="container">
-                    <div id="map"></div>
-                    <div class="right">
-                       
-                        
-                        <div id="demo"></div>
-                    </div>
-                    <div class="left">
+                    <div id="map" class="map"></div>
+                    <div id="demo" class="right"></div>
                 </div>
             </div>
         <!-- End Circle Section -->
 	</div>
-    </div>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
     <script src="googlemaps.js"></script>
